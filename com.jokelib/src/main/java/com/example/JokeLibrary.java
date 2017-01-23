@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Random;
 // JOkes from http://www.devtopics.com/best-programming-jokes/
 public class JokeLibrary  {
-    ArrayList<String> jokes = new ArrayList<>();
+   public ArrayList<String> jokes = new ArrayList<>();
 
-    JokeLibrary(){
+    public JokeLibrary(){
         jokes.add("Two bytes meet.  The first byte asks, “Are you ill?”  \n" +
                 "The second byte replies, “No, just feeling a bit off.”");
         jokes.add("Eight bytes walk into a bar.  The bartender asks, “Can I get you anything?”\n" +
