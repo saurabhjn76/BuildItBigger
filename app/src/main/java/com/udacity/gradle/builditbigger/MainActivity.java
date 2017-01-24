@@ -54,8 +54,14 @@ public class MainActivity extends AppCompatActivity {
        /* Intent intent = new Intent(this, JokeActivity.class);
         intent.putExtra(JokeActivity.JOKEINTENT,jokeLibrary.getRandomJoke());
         startActivity(intent);*/
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, jokeLibrary.getRandomJoke()));
+       // new EndpointsAsyncTask().execute(new Pair<Context, String>(this, jokeLibrary.getRandomJoke()));
+        new EndpointsAsyncTask().execute(new Pair<Context, String>(this,"None"));
 
+    }
+    public static void showJoke(Context context, String joke){
+        Intent intent = new Intent(context, JokeActivity.class);
+        intent.putExtra(JokeActivity.JOKEINTENT,joke);
+        context.startActivity(intent);
     }
 
 

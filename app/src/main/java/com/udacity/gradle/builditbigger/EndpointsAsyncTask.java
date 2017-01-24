@@ -54,6 +54,8 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
 
     @Override
     protected void onPostExecute(String result) {
-        Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+       // Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+        MainActivity.showJoke(context,result);
+
     }
 }
