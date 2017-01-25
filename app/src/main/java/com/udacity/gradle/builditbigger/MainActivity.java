@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public static void showJoke(Context context, String joke){
         Intent intent = new Intent(context, JokeActivity.class);
         intent.putExtra(JokeActivity.JOKEINTENT,joke);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
 
